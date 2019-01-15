@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'Monosten';
+  font-style: normal;
+  font-weight: normal;
+  src: local("monosten a"),
+       url("./fonts/Monosten-A-webfont.eot") format("eot"),
+       url("./fonts/Monosten-A-webfont.ttf") format("ttf"),
+       url("./fonts/Monosten-A-webfont.svg") format("svg"),
+       url("./fonts/Monosten-A-webfont.woff") format("woff"),
+       url("./fonts/Monosten-A-webfont.woff2") format("woff2");
+}
+
+/*@font-face {
+  font-family: 'Calibre';
+  font-style: normal;
+  font-weight: normal;
+  src: local("calibre"),
+       url("./fonts/CalibreWeb-Regular.eot") format("eot"),
+       url("./fonts/CalibreWeb-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Calibre';
+  font-style: normal;
+  font-weight: bold;
+  src: local("calibre"),
+       url("./fonts/CalibreWeb-Semibold.eot") format("eot"),
+       url("./fonts/CalibreWeb-Semibold.woff") format("woff");
+}*/
+
+body {
+  font-family: "Monosten", monospace;
+  background: #0E1419;
+  color: #e2e1e1;
+}
+/*.fh {
+  font-family: "Calibre",Verdana, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}*/
+
+img.lazy {
+  opacity: 0;
+  transition: opacity 0.9s;
+}
+img.lazy.loaded {
+  opacity: 1;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Header */
+
+header,
+main {
+  max-width: 700px;  
+  margin: 30vh auto 10vh auto;
+}
+
+@media (max-width: 600px) {
+  header {
+    margin-top: 30px;
+  }
+}
+
+header h1,
+header p {
+  font-size: 1rem;
+  display: inline-block;
+}
+header h1 {
+  color: #f4a493;
+  margin-right: 20px;
+  font-weight: normal;
+}
+header p {
+  color: #61676c;
+}
+
+/* Contact details */
+
+@media (min-width: 600px) {
+  aside {
+    right: 0; left: 0;
+    padding: 3%;
+    text-align: right;
+    position: absolute;
+    top: 0;
+  }
+
+  aside [itemprop="email"] {
+    float: left;
+  }
+}
+
+aside [itemprop="email"] img {
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+}
+
+aside a:hover {
+  color: #1D7CE6;
+}
+
+aside span {
+  color: #61676c;
+  margin-right: 15px;
+}
+
+@media (max-width: 600px) {
+  aside {
+    padding: 7%;
+  }
+  aside a {
+    display: block;
+  }
+  aside span {
+    display: block;
+    margin: 0 0 30px 0;
+  }
+}
+
+
+/* Intro */
+
+main {
+  margin: 30px auto;
+}
+main p {
+  font-size: 1.3rem;
+  margin-bottom: 2em;
+}
+@media (max-width: 600px) {
+  main p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  header,
+  main {
+    margin-left: 7%;
+    margin-right: 7%;
+  }
+}
+
+/* Work */
+
+section {
+  margin: 3% auto;
+  margin-top: 10%;
+  max-width: 1000px;
+}
+@media (max-width: 600px) {
+  section {
+    margin: 30px auto 0;
+  }
+}
+section a {
+  color: #1D7CE6;
+}
+section a:hover {
+  text-decoration: underline;
+}
+section span {
+  font-size: 0.7rem;
+  display: block;
+  margin-top: 10px;
+  color: #61676c;
+}
+section img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 20px;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
+}
+section div {
+  margin-bottom: 80px;
+  font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+  section div {
+    margin-bottom: 50px;
+  }
+  section p {
+    padding: 0 7%;
+  }
+}
+
+/* Footer */
+
+footer {
+  text-align: center;
+  margin: 120px 0;
+}
+footer a {
+  display: block;
+  margin-top: 30px;
+}
+
+/* Pixels */
+
+#pixels {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  content: ' ';
+  z-index: -1;
+}
+.p {
+  background-color: #000;
+  width: 2px;
+  height: 2px;
+  display: block;
+  position: absolute;
+  bottom: 200px;
+  opacity: 0.4;
+}

@@ -1,0 +1,55 @@
+==================================================================
+https://keybase.io/djl
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://davidlongworth.com
+  * I am djl (https://keybase.io/djl) on keybase.
+  * I have a public key ASDZ2355Zi_0KizZYYUYnIHtQKhkYL83givKGNIyw5tnXQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101b6f1c7b1b3db11d73a3ea0a8e76a2d6865bc1ee8a0bb32bd0c57fc2556fb8db70a",
+      "host": "keybase.io",
+      "kid": "0120d9db7e79662ff42a2cd96185189c81ed40a86460bf37822bca18d232c39b675d0a",
+      "uid": "6a98a07408b02de99a08f20f359adf00",
+      "username": "djl"
+    },
+    "merkle_root": {
+      "ctime": 1520892436,
+      "hash": "b5fcdb9bf454cc0694e5162f5638b50f24d455ae743a06c863207a1958d1248fb36140ee9f1f93123618331e09cb53a6c1f531e8674867e7062d7413cfef60eb",
+      "hash_meta": "1c9fd9a63c187018dcffee353b73419b1ec9f3425cf7f6278d5f32783dfc0d28",
+      "seqno": 2226819
+    },
+    "service": {
+      "hostname": "davidlongworth.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.45"
+  },
+  "ctime": 1520892448,
+  "expire_in": 504576000,
+  "prev": "6958e606c1aa22fafd388717a676ddd93444a128a8e757912850959def134b29",
+  "seqno": 16,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg2dt+eWYv9Cos2WGFGJyB7UCoZGC/N4IryhjSMsObZ10Kp3BheWxvYWTFA0Z7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTAxYjZmMWM3YjFiM2RiMTFkNzNhM2VhMGE4ZTc2YTJkNjg2NWJjMWVlOGEwYmIzMmJkMGM1N2ZjMjU1NmZiOGRiNzBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwZDlkYjdlNzk2NjJmZjQyYTJjZDk2MTg1MTg5YzgxZWQ0MGE4NjQ2MGJmMzc4MjJiY2ExOGQyMzJjMzliNjc1ZDBhIiwidWlkIjoiNmE5OGEwNzQwOGIwMmRlOTlhMDhmMjBmMzU5YWRmMDAiLCJ1c2VybmFtZSI6ImRqbCJ9LCJtZXJrbGVfcm9vdCI6eyJjdGltZSI6MTUyMDg5MjQzNiwiaGFzaCI6ImI1ZmNkYjliZjQ1NGNjMDY5NGU1MTYyZjU2MzhiNTBmMjRkNDU1YWU3NDNhMDZjODYzMjA3YTE5NThkMTI0OGZiMzYxNDBlZTlmMWY5MzEyMzYxODMzMWUwOWNiNTNhNmMxZjUzMWU4Njc0ODY3ZTcwNjJkNzQxM2NmZWY2MGViIiwiaGFzaF9tZXRhIjoiMWM5ZmQ5YTYzYzE4NzAxOGRjZmZlZTM1M2I3MzQxOWIxZWM5ZjM0MjVjZjdmNjI3OGQ1ZjMyNzgzZGZjMGQyOCIsInNlcW5vIjoyMjI2ODE5fSwic2VydmljZSI6eyJob3N0bmFtZSI6ImRhdmlkbG9uZ3dvcnRoLmNvbSIsInByb3RvY29sIjoiaHR0cHM6In0sInR5cGUiOiJ3ZWJfc2VydmljZV9iaW5kaW5nIiwidmVyc2lvbiI6MX0sImNsaWVudCI6eyJuYW1lIjoia2V5YmFzZS5pbyBnbyBjbGllbnQiLCJ2ZXJzaW9uIjoiMS4wLjQ1In0sImN0aW1lIjoxNTIwODkyNDQ4LCJleHBpcmVfaW4iOjUwNDU3NjAwMCwicHJldiI6IjY5NThlNjA2YzFhYTIyZmFmZDM4ODcxN2E2NzZkZGQ5MzQ0NGExMjhhOGU3NTc5MTI4NTA5NTlkZWYxMzRiMjkiLCJzZXFubyI6MTYsInRhZyI6InNpZ25hdHVyZSJ9o3NpZ8RA6b9aq8e5TG+xnHNIahb6PUjq6z6sZN2nIE+cibXFODSfJ/BvuGHoEgV1L8ER7V43pxPZMKTUMnZgnOBuiSJ7DKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIDfHCKulBSt8fSHe05334RvznuIfZRRPtlPWQgLX+nSyo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/djl
+
+==================================================================
