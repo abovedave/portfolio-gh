@@ -15,32 +15,11 @@
        url("./fonts/Monosten-A-webfont.woff2") format("woff2");
 }
 
-/*@font-face {
-  font-family: 'Calibre';
-  font-style: normal;
-  font-weight: normal;
-  src: local("calibre"),
-       url("./fonts/CalibreWeb-Regular.eot") format("eot"),
-       url("./fonts/CalibreWeb-Regular.woff") format("woff");
-}
-
-@font-face {
-  font-family: 'Calibre';
-  font-style: normal;
-  font-weight: bold;
-  src: local("calibre"),
-       url("./fonts/CalibreWeb-Semibold.eot") format("eot"),
-       url("./fonts/CalibreWeb-Semibold.woff") format("woff");
-}*/
-
 body {
   font-family: "Monosten", monospace;
   background: #0E1419;
   color: #e2e1e1;
 }
-/*.fh {
-  font-family: "Calibre",Verdana, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-}*/
 
 img.lazy {
   opacity: 0;
