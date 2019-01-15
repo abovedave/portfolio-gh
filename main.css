@@ -21,14 +21,6 @@ body {
   color: #e2e1e1;
 }
 
-img.lazy {
-  opacity: 0;
-  transition: opacity 0.9s;
-}
-img.lazy.loaded {
-  opacity: 1;
-}
-
 a {
   color: inherit;
   text-decoration: none;
@@ -136,6 +128,14 @@ section {
   margin: 3% auto;
   margin-top: 10%;
   max-width: 1000px;
+}
+
+section div {
+  opacity: 0;
+  transition: opacity 0.9s;
+}
+section div.loaded {
+  opacity: 1;
 }
 @media (max-width: 780px) {
   section {

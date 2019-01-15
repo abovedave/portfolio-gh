@@ -40,8 +40,10 @@ document.addEventListener('DOMContentLoaded', function() {
       entries.forEach(function(entry) {
         if (entry.isIntersecting) {
           var image = entry.target;
+          var parent = image.parentNode;
+
           image.src = image.dataset.src;
-          image.classList.add('loaded');
+          parent.classList.add('loaded');
           imageObserver.unobserve(image);
         }
       });
@@ -64,7 +66,9 @@ document.addEventListener('DOMContentLoaded', function() {
         lazyloadImages.forEach(function(img) {
           if (img.offsetTop < (window.innerHeight + scrollTop)) {
             img.src = img.dataset.src;
-            img.classList.add('loaded');
+
+            var parent = img.parentNode;
+            parent.classList.add('loaded');
           }
         });
         if (lazyloadImages.length == 0) { 
