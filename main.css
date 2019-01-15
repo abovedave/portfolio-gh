@@ -179,12 +179,18 @@ section img {
   width: 100%;
   height: auto;
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
+  position: relative;
+  z-index: 2;
 }
 section div {
   margin-bottom: 80px;
   font-size: 0.9rem;
+}
+section p {
+  max-width: 700px;
+  margin: 0 auto;
 }
 @media (max-width: 600px) {
   section div {
@@ -199,11 +205,45 @@ section div {
 
 footer {
   text-align: center;
-  margin: 120px 0;
+  margin-top: 120px;
+  padding-bottom: 120px;
+  background: #070D12;
 }
 footer a {
   display: block;
-  margin-top: 30px;
+}
+footer h3 {
+  color: #61676c;
+  font-size: 1rem;
+  font-weight: normal;
+  padding: 80px 0 0;
+}
+footer img {
+  margin-top: 80px;
+}
+
+/* Skills */
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 80px 7% 20px;
+  text-align: center;
+}
+.list li {
+  flex-grow: 0;
+  padding: 15px 30px;
+  list-style: none;
+  width: 20%;
+  box-sizing: border-box;
+}
+
+.list--medium li {
+  width: 25%;
+}
+
+.list--large li {
+  width: 20%;
 }
 
 /* Pixels */
@@ -215,14 +255,16 @@ footer a {
   height: 100%;
   display: block;
   content: ' ';
-  z-index: -1;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.4;
 }
 .p {
   background-color: #000;
   width: 2px;
   height: 2px;
+  border-radius: 2px;
   display: block;
   position: absolute;
   bottom: 200px;
-  opacity: 0.4;
 }

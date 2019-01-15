@@ -7,6 +7,10 @@ function randRange(minNum, maxNum) {
   return (Math.floor(Math.random() * (maxNum - minNum + 1)) + minNum);
 }
 function createPixels() {
+  var wrap = document.createElement('div');
+  wrap.id = 'pixels';
+  document.body.appendChild(wrap);
+
   for (i=1;i<150;i++) {
     var pixel = document.createElement('div');
     
@@ -16,7 +20,7 @@ function createPixels() {
     pixel.style.top = randRange(-1000,1400) + 'px';
     pixel.style.backgroundColor = colours[Math.floor(Math.random() * colours.length)];
 
-    pixels.appendChild(pixel);
+    wrap.appendChild(pixel);
   }
 }
 
@@ -51,19 +55,19 @@ document.addEventListener('DOMContentLoaded', function() {
     lazyloadImages = document.querySelectorAll('img.lazy');
     
     function lazyload () {
-      if(lazyloadThrottleTimeout) {
+      if (lazyloadThrottleTimeout) {
         clearTimeout(lazyloadThrottleTimeout);
       }    
 
       lazyloadThrottleTimeout = setTimeout(function() {
         var scrollTop = window.pageYOffset;
         lazyloadImages.forEach(function(img) {
-            if(img.offsetTop < (window.innerHeight + scrollTop)) {
-              img.src = img.dataset.src;
-              img.classList.add('loaded');
-            }
+          if (img.offsetTop < (window.innerHeight + scrollTop)) {
+            img.src = img.dataset.src;
+            img.classList.add('loaded');
+          }
         });
-        if(lazyloadImages.length == 0) { 
+        if (lazyloadImages.length == 0) { 
           document.removeEventListener('scroll', lazyload);
           window.removeEventListener('resize', lazyload);
           window.removeEventListener('orientationChange', lazyload);
