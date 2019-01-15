@@ -42,7 +42,7 @@ main {
   margin: 30vh auto 10vh auto;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 780px) {
   header {
     margin-top: 30px;
   }
@@ -64,7 +64,7 @@ header p {
 
 /* Contact details */
 
-@media (min-width: 600px) {
+@media (min-width: 780px) {
   aside {
     right: 0; left: 0;
     padding: 3%;
@@ -93,7 +93,7 @@ aside span {
   margin-right: 15px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 780px) {
   aside {
     padding: 7%;
   }
@@ -116,13 +116,13 @@ main p {
   font-size: 1.3rem;
   margin-bottom: 2em;
 }
-@media (max-width: 600px) {
+@media (max-width: 780px) {
   main p {
     font-size: 1.2rem;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 780px) {
   header,
   main {
     margin-left: 7%;
@@ -137,7 +137,7 @@ section {
   margin-top: 10%;
   max-width: 1000px;
 }
-@media (max-width: 600px) {
+@media (max-width: 780px) {
   section {
     margin: 30px auto 0;
   }
@@ -171,7 +171,7 @@ section p {
   max-width: 700px;
   margin: 0 auto;
 }
-@media (max-width: 600px) {
+@media (max-width: 780px) {
   section div {
     margin-bottom: 50px;
   }
@@ -217,13 +217,13 @@ footer img {
   box-sizing: border-box;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 780px) {
   .list li {
     width: 50%;
   }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 780px) {
   .list--medium li {
     width: 25%;
   }
