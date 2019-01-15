@@ -14,10 +14,9 @@ function createPixels() {
   for (i=1;i<150;i++) {
     var pixel = document.createElement('div');
     
-    pixel.id = 'p' + i;
     pixel.className = 'p'
-    pixel.style.left = randRange(0,1600) + 'px';
-    pixel.style.top = randRange(-1000,1400) + 'px';
+    pixel.style.left = randRange(0, window.innerWidth) + 'px';
+    pixel.style.top = randRange(-1000, window.innerHeight) + 'px';
     pixel.style.backgroundColor = colours[Math.floor(Math.random() * colours.length)];
 
     wrap.appendChild(pixel);
