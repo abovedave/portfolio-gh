@@ -238,12 +238,20 @@ footer img {
   box-sizing: border-box;
 }
 
-.list--medium li {
-  width: 25%;
+@media (max-width: 600px) {
+  .list li {
+    width: 50%;
+  }
 }
 
-.list--large li {
-  width: 20%;
+@media (min-width: 600px) {
+  .list--medium li {
+    width: 25%;
+  }
+
+  .list--large li {
+    width: 20%;
+  }
 }
 
 /* Pixels */
