@@ -42,7 +42,10 @@ document.addEventListener('DOMContentLoaded', function() {
           var parent = image.parentNode;
 
           image.src = image.dataset.src;
-          parent.classList.add('loaded');
+          image.onload = function () {
+            parent.classList.add('loaded');   
+          };
+
           imageObserver.unobserve(image);
         }
       });
@@ -67,7 +70,9 @@ document.addEventListener('DOMContentLoaded', function() {
             img.src = img.dataset.src;
 
             var parent = img.parentNode;
-            parent.classList.add('loaded');
+            img.onload = function () {
+              parent.classList.add('loaded');   
+            };
           }
         });
         if (lazyloadImages.length == 0) { 
