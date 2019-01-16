@@ -240,8 +240,10 @@ footer .logo {
 .list {
   display: flex;
   flex-wrap: wrap;
-  padding: 80px 7% 20px;
-  text-align: center;
+  padding: 45px 7% 40px;
+  text-align: left;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .list li {
   flex-grow: 0;
