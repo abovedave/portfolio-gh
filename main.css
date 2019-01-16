@@ -26,51 +26,117 @@ a {
   text-decoration: none;
 }
 
-/* Header */
+/* Animations */
+
+@keyframes fadein {
+  from {
+    opacity: 0
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes slidedown {
+  from {
+    top: 30px;
+    opacity: 0
+  }
+
+  to {
+    top: 0;
+    opacity: 1
+  }
+}
+
+/* Global */
 
 header,
-main {
-  max-width: 700px;  
-  margin: 30vh auto 10vh auto;
+section,
+aside {
+  width: 75%;
+  max-width: 1900px;  
+  margin: 0 auto;
+}
+
+@media (max-width: 780px) {
+  header,
+  section,
+  aside {
+    width: auto;
+  }
+  header,
+  aside {
+    padding: 7%;
+  }
+}
+
+/* Header */
+
+header {
+  margin: 30vh auto 20vh auto;
+}
+header h1,
+header p {
+  font-size: 1.3rem;
+  padding-bottom: 1.3em;
+  max-width: 650px;
+}
+header h1 {
+  color: #f4a493;
+  font-weight: normal;
+  padding-bottom: .3em;
+}
+header [itemprop="jobTitle"] {
+  color: #61676c;
 }
 
 @media (max-width: 780px) {
   header {
-    margin-top: 30px;
+    margin-top: 70px;
+    margin-bottom: 0;
+  }
+  header h1,
+  header p {
+    font-size: 1.1rem;
   }
 }
 
-header h1,
-header p {
-  font-size: 1rem;
-  display: inline-block;
-}
+/* Fadeins */
+
 header h1 {
-  color: #f4a493;
-  margin-right: 20px;
-  font-weight: normal;
+  animation: fadein 0.6s 0.6s both ease-in;
+}
+header [itemprop="jobTitle"] {
+  animation: fadein 0.6s 1s both ease-in;
 }
 header p {
-  color: #61676c;
+  animation: fadein 0.6s 1.6s both ease-in;
+}
+section {
+  animation: fadein 0.6s 2.4s both ease-in;
+}
+aside {
+  animation: fadein 0.6s 2.4s both ease-in;
 }
 
 /* Contact details */
 
 @media (min-width: 780px) {
   aside {
-    right: 0; left: 0;
-    padding: 3%;
     text-align: right;
-    position: absolute;
-    top: 0;
+    margin-top: 3%;
   }
-
+  aside a {
+    margin-left: 5px;
+  }
   aside [itemprop="email"] {
     float: left;
   }
 }
 
-aside [itemprop="email"] img {
+.icon {
   vertical-align: middle;
   position: relative;
   top: -1px;
@@ -86,9 +152,6 @@ aside span {
 }
 
 @media (max-width: 780px) {
-  aside {
-    padding: 7%;
-  }
   aside a {
     display: block;
   }
@@ -98,49 +161,17 @@ aside span {
   }
 }
 
-
-/* Intro */
-
-main {
-  margin: 30px auto;
-}
-main p {
-  font-size: 1.3rem;
-  margin-bottom: 2em;
-}
-@media (max-width: 780px) {
-  main p {
-    font-size: 1.2rem;
-  }
-}
-
-@media (max-width: 780px) {
-  header,
-  main {
-    margin-left: 7%;
-    margin-right: 7%;
-  }
-}
-
 /* Work */
 
 section {
-  margin: 3% auto;
-  margin-top: 10%;
-  max-width: 1000px;
+  margin: 0 auto;
 }
-
 section div {
+  transition: opacity 2.2s;
   opacity: 0;
-  transition: opacity 0.9s;
 }
 section div.loaded {
   opacity: 1;
-}
-@media (max-width: 780px) {
-  section {
-    margin: 30px auto 0;
-  }
 }
 section a {
   color: #1D7CE6;
@@ -162,6 +193,7 @@ section img {
   box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
   position: relative;
   z-index: 2;
+  transform: translatez(0);
 }
 section div {
   margin-bottom: 80px;
@@ -171,6 +203,7 @@ section p {
   max-width: 700px;
   margin: 0 auto;
 }
+
 @media (max-width: 780px) {
   section div {
     margin-bottom: 50px;
@@ -197,8 +230,9 @@ footer h3 {
   font-weight: normal;
   padding: 80px 0 0;
 }
-footer img {
+footer .logo {
   margin-top: 80px;
+  margin-bottom: 30px;
 }
 
 /* Skills */
@@ -242,7 +276,7 @@ footer img {
   height: 100%;
   display: block;
   content: ' ';
-  z-index: 1;
+  z-index: 0;
   pointer-events: none;
   opacity: 0.4;
 }
