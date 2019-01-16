@@ -278,7 +278,6 @@ footer .logo {
   content: ' ';
   z-index: -1;
   pointer-events: none;
-  opacity: 0.4;
 }
 .p {
   background-color: #000;

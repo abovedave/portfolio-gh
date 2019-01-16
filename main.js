@@ -1,7 +1,7 @@
 /* Random pixels */
 
 var pixels = document.getElementById('pixels');
-var colours = ['#1B65FF', '#FFBE00', '#FF1B1B', '#808080'];
+var colours = ['#123475', '#6e580f', '#6e1619', '#3b3f42'];
 
 function randRange(minNum, maxNum) {
   return (Math.floor(Math.random() * (maxNum - minNum + 1)) + minNum);
