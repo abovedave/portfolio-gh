@@ -276,7 +276,7 @@ footer .logo {
   height: 100%;
   display: block;
   content: ' ';
-  z-index: 0;
+  z-index: -1;
   pointer-events: none;
   opacity: 0.4;
 }
@@ -284,7 +284,6 @@ footer .logo {
   background-color: #000;
   width: 2px;
   height: 2px;
-  border-radius: 2px;
   display: block;
   position: absolute;
   bottom: 200px;
