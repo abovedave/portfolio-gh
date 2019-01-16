@@ -164,7 +164,8 @@ aside span {
 /* Work */
 
 section {
-  margin: 0 auto;
+  position: relative;
+  z-index: 2;
 }
 section div {
   transition: opacity 2.2s;
@@ -241,7 +242,6 @@ footer .logo {
   display: flex;
   flex-wrap: wrap;
   padding: 45px 7% 40px;
-  text-align: left;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -278,7 +278,7 @@ footer .logo {
   height: 100%;
   display: block;
   content: ' ';
-  z-index: -1;
+  z-index: 0;
   pointer-events: none;
 }
 .p {
