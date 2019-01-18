@@ -8,11 +8,11 @@
   font-style: normal;
   font-weight: normal;
   src: local("monosten a"),
-       url("./fonts/Monosten-A-webfont.eot") format("eot"),
-       url("./fonts/Monosten-A-webfont.ttf") format("ttf"),
-       url("./fonts/Monosten-A-webfont.svg") format("svg"),
-       url("./fonts/Monosten-A-webfont.woff") format("woff"),
-       url("./fonts/Monosten-A-webfont.woff2") format("woff2");
+       url("/assets/fonts/Monosten-A-webfont.eot") format("eot"),
+       url("/assets/fonts/Monosten-A-webfont.ttf") format("ttf"),
+       url("/assets/fonts/Monosten-A-webfont.svg") format("svg"),
+       url("/assets/fonts/Monosten-A-webfont.woff") format("woff"),
+       url("/assets/fonts/Monosten-A-webfont.woff2") format("woff2");
 }
 
 body {
