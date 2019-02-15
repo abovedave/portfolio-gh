@@ -19,6 +19,8 @@ body {
   font-family: "Monosten", monospace;
   background: #0E1419;
   color: #e2e1e1;
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 a {
